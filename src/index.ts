@@ -1,4 +1,7 @@
 
 import './styles.css';
-console.log('Let\'s Get Ready to Party With Some TypeScript!');
+import { add } from './math';
+console.log('Ready to Get Down With Some TypeScript!');
+
+console.log(add(3, 3));
 
