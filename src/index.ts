@@ -1,4 +1,4 @@
 
 import './styles.css';
-console.log('Ready to Party With Some TypeScript!');
+console.log('Let\'s Get Ready to Party With Some TypeScript!');
 
