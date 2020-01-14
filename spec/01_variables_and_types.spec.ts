@@ -215,6 +215,15 @@ describe('enums and union constants', () => {
                 break;
             }
         }
+        expect(cost).toBe(100);
+
+    });
+
+    it('using union constants', () => {
+        type seatTypes = 'aisle' | 'window' | 'middle';
+
+        const seat: seatTypes = 'window';
+        const seat2: seatTypes = 'bob';  // can't assign without error
 
     });
 });
