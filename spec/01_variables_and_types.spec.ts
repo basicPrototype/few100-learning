@@ -246,3 +246,16 @@ describe('fun with bools', () => {
         }
     });
 });
+
+describe('misc examples', () => {
+    it('type assertions', () => {
+        let x: any;
+        x = 'Tacos';
+        // expect(x.howlong).toBe(5)
+        const y = x as string;
+
+        expect(y.length).toBe(5);
+
+        expect((x as string).length).toBe(5);
+    });
+});
