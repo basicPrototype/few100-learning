@@ -7,6 +7,7 @@ describe('functions', () => {
             }
 
             // 2. anonymous function
+            // tslint:disable-next-line: only-arrow-functions
             const subtract = function (a: number, b: number) {
                 return a - b;
             };

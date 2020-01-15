@@ -15,8 +15,8 @@ describe('declaring variables', () => {
         age = 'Old';
         // intellisense only shows string options
 
-        age = ['a', 'b'];
-        // lint complains because this is neither a string or number
+        // age = ['a', 'b'];
+        // ts complains because this is neither a string or number
 
         // add any so it doesn't complain.  tslint won't allow functions without type declaration.
         function add(a: any, b: any) {
@@ -30,7 +30,8 @@ describe('declaring variables', () => {
         name = 'Steve';
         name = 'Kara';
 
-        name = 1138; // lint errors because we just changed the type and it started as an inferred string
+        //  errors because we just changed the type and it started as an inferred string
+        // name = 1138;
     });
 });
 
@@ -223,7 +224,8 @@ describe('enums and union constants', () => {
         type seatTypes = 'aisle' | 'window' | 'middle';
 
         const seat: seatTypes = 'window';
-        const seat2: seatTypes = 'bob';  // can't assign without error
+        // can't assign without error
+        // const seat2: seatTypes = 'bob';
 
     });
 });
