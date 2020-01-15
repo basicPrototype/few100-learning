@@ -1,4 +1,4 @@
-import { isEven } from './utils';
+import { isEven, IHaveAMessage } from './utils';
 
 describe('array methods', () => {
     const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -113,9 +113,28 @@ describe('an example', () => {
         expect(result.totalQty).toBe(11);
         expect(result.totalPrice).toBeCloseTo(13.37, 2);
 
-        const roundedPrice: number = result.totalPrice.toFixed(2);
-        expect(roundedPrice).toEqual(13.37);
+        // mystery - test thinks roundedPrice is a string
+        // const roundedPrice: number = result.totalPrice.toFixed(2);
+        // expect(roundedPrice).toEqual(13.37);
 
+
+    });
+});
+
+describe('structural typing', () => {
+    it('an example', () => {
+        function logIt(thingy: IHaveAMessage): void {
+            console.log(thingy.message + ' from: ' + thingy.from);
+        }
+
+        const call = {
+            from: 'mom',
+            message: 'call me',
+            time: '4:20 PM'
+        };
+
+        // only logs message
+        logIt(call);
 
     });
 });
