@@ -52,9 +52,9 @@ describe('two types of loops that may or may not be', () => {
         };
 
         // for-in loop enumerates the properties of an object
-        for (const prop in book) {
-            console.log(`Book's ${prop} is ${book[prop]}`);
-        }
+        // for (const prop in book) {
+        //     console.log(`Book's ${prop} is ${book[prop]}`);
+        // }
     });
 
     // useful in angular templates
@@ -85,7 +85,7 @@ describe('an example', () => {
             price: number;
         }
 
-        const cart: cartItem[] = [
+        const cart: CartItem[] = [
             { description: 'Eggs', qty: 3, price: 2.37 },
             { description: 'Bread', qty: 2, price: 3.50 },
             { description: 'Beer', qty: 6, price: 7.50 },
