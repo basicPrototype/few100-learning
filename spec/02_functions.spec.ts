@@ -135,7 +135,6 @@ describe('functions', () => {
                 }
 
                 const customerMaker = tagMaker('customer');
-
                 expect(customerMaker('Bob Smith')).toBe('<customer>Bob Smith</customer>');
             });
 

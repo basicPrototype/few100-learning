@@ -230,7 +230,7 @@ describe('enums and union constants', () => {
     });
 });
 
-describe('fun with bools', () => {
+describe('fun with booleans', () => {
 
     it('a truth table', () => {
         expect(true).toBeTruthy();
